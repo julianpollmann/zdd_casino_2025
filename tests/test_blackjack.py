@@ -17,6 +17,9 @@ def test_count_cards():
 def test_count_cards_with_aces(cards, score):
     assert count_cards(cards) == score
 
+def test_always_false():
+    assert True == False
+
 def test_more_than_21():
     assert count_cards(["10", "J", "Q"]) > 21
 
